@@ -108,7 +108,7 @@ app.get('/post/:id', (req, res) => {
   }
 })
 
-const {Port = 1337} = process.env
+const {PORT = 1337} = process.env
 app.listen(PORT, () => {
   console.log(`App listening in port ${PORT}`);
 });
